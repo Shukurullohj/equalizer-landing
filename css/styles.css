@@ -5,6 +5,9 @@
   --white: #fcfaf9;
   --black: #191826;
 }
+
+
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -95,6 +98,56 @@ select:-webkit-autofill:focus {
   flex-grow: 1;
 }
 
+
+.site-header {
+  padding: 40px 0;
+}
+
+.hero {
+  padding: 24px 0;
+}
+
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.455px;
+  font-weight: bold;
+}
+.hero__text {
+}
+.cta {
+}
+.cta__container {
+}
+.cta__bg-box {
+}
+.cta__phone-img {
+}
+.cta__premium-card {
+}
+.premium-card {
+}
+.premium__card {
+}
+.premium-card__heading {
+}
+.premium-card__text {
+}
+.premium-card__price-wrapper {
+}
+.footer {
+}
+.footer__container {
+}
+.logo {
+}
+.footer__text {
+}
+.footer__socials-box {
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -104,3 +157,46 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
 }
+
+
+@media only screen and (min-width: 520px) {
+  .hero__content {
+    max-width: 520px;
+  }
+
+  .hero__heading {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}   
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+  body {
+    font-size: 18px;
+    line-height: 28px;
+    background-image:
+      url("../img/bg-pattern-1.svg"),
+      url("../img/body-bg-tablet.svg");
+    background-position: right -36px top -32px, left top;
+    background-size: 267px 400px, 100%;
+  }
+  .site-header {
+    padding: 62px 0;
+  }
+  .hero__heading {
+    margin-bottom: 28px;
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -0.727px;
+  }
+}   
+
+
+@media only screen and (min-width: 1024px) {
+  .hero__content {
+    max-width: 660px;
+  }
+}   
