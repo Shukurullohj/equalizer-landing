@@ -1,4 +1,4 @@
-:root[data-theme="light"] {
+:root {
   --green: #66e2dc;
   --tomato: #fa7453;
   --orange: #ffb964;
@@ -158,28 +158,79 @@ select:-webkit-autofill:focus {
   letter-spacing: -0.455px;
   font-weight: bold;
 }
-.hero__text {
-}
+
 .cta {
+  padding-top: 44px;
 }
+
 .cta__container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .cta__bg-box {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 140px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--black);
+  border-radius: 15px;
+  width: 100%;
+  height: 600px;
 }
+
 .cta__phone-img {
+  position: relative;
+  display: block;
+  z-index: 1;
 }
-.cta__premium-card {
+
+.cta__bg-pattern {
+  width: 280px;
+  height: 420px;
 }
+
 .premium-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  background-color: var(--tomato);
+  padding: 48px 36px;
+  margin-right: -24px;
+  margin-left: -24px;
+  border-radius: 15px;
+  color: var(--white);
 }
-.premium__card {
-}
+
 .premium-card__heading {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--white);  
 }
-.premium-card__text {
+
+.premium-card__button {
+  text-decoration: none;
 }
+
 .premium-card__price-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
 }
+.premium-card__price{
+  margin-right: 16px;
+  font-size: 65px;
+  font-weight: bold;
+  line-height: 52px;  
+}
+
 .footer {
 }
 .footer__container {
