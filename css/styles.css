@@ -98,6 +98,49 @@ select:-webkit-autofill:focus {
   flex-grow: 1;
 }
 
+/* BUTTON  */
+
+.button {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button--dark {
+  background-color: var(--black);
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.button--light {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.button--block {
+  width: 100%;
+  height: auto;
+}
+
+.button__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px 14px;
+  border: 0;
+}
+
+.button__icon {
+  margin-right: 8px;
+}
 
 .site-header {
   padding: 40px 0;
